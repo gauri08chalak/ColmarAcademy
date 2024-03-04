@@ -20,4 +20,4 @@ This project was created with:
 - CSS
 
  ## GitHub Page URL Link
-https://sonalmanwar.github.io/Colmar_Academy_project/
+https://github.com/gauri08chalak/ColmarAcademy
