@@ -1,0 +1,474 @@
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #505050;
+}
+
+main, footer {
+    position: relative;
+    top:72px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image-container {
+    overflow: hidden;
+    box-shadow: 5px 5px 20px darkslategrey;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    padding: 16px 0;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgb(75, 83, 83);
+    transition: all 0.5s ease-in 0.1s;
+}
+
+.button:hover {
+    background-color: rgb(87, 99, 99);
+    padding: 20px 10px;
+    box-shadow: 5px 5px 20px black
+}
+
+.side-container {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease-in 0.1s;
+}
+
+.side-container:hover {
+    background-color: lightgray;
+}
+
+h1 {
+     font-size: 48px;  
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 40px; 
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 24px; 
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
+a:hover {
+    color: rgb(122, 172, 189);
+    font-size: 110%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 72px;
+    background-color: white;
+    font-size: 20px;
+    line-height: 72px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+header .left {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 24px;
+}
+
+header .right {
+    margin-right: 24px;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+header .left a:hover {
+    color: #505050;
+}
+
+header span {
+    color: gray;
+}
+
+.desktop img {
+    height: 64px;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+    header li {
+        margin: 0 64px;
+    }
+
+
+}
+
+/* Banner */
+
+#banner {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#banner-image {
+    width: 50%;
+    margin: 32px;
+}
+
+#banner .content {
+    width: 30%;
+    padding: 64px 24p;
+}
+
+#banner h3 {
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+#banner a {
+    color: white;
+}
+
+@media only screen and (max-width: 1125px) {
+
+    #banner-image {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #banner-image {
+        min-width: 90%;
+    }
+
+    #banner {
+        flex-flow: column;
+    }
+
+    #banner .content {
+        width: 70%;
+        padding: 0 16px 32px;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #banner-image {
+        width: 100%;
+        margin: auto;
+    }
+
+    #banner .content {
+        padding: 32px 0;
+    }
+
+}
+
+/* Campus Information */
+
+#campus-info {
+    display: flex;
+    background-color: ghostwhite;
+}
+
+.learning-quote {
+    width: 50%;
+    margin: 32px;
+}
+
+.learning-quote .content h2 {
+    margin: 32px 0;
+}
+
+.learning-quote .content span {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 32px 0;
+}
+
+.campus-info {
+    width: 40%;
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+.campus-info .image-container {
+    max-width: 32%;
+    margin: 16px;
+}
+
+.campus-info .content {
+    margin-left: 8px;
+}
+
+.campus-info .content h3 {
+    margin: 8px 0;
+}
+
+.campus-info .content p {
+    line-height: 2;
+}
+
+.campus-info .content a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    
+
+    .campus-info {
+        width: 100%;
+    }
+
+    .campus-info .image-container {
+        max-width: 100%;
+    }
+
+    #campus-info .side-container {
+        flex-flow: column;
+        align-items: flex-start;
+        border: none;
+    }
+
+    #campus-info .side-container:hover {
+        background-color: ghostwhite;
+    }
+
+    .campus-info .content {
+        padding-left: 32px;
+    }
+
+    #campus-info h3 {
+        font-size: 32px;
+    }
+
+    #campus-info p {
+        font-size: 24px;
+    }
+}
+
+/* Course Information */
+
+#course-info {
+    background-color: whitesmoke;
+    padding: 32px 0;
+}
+
+#course-info h2 {
+    text-align: center;
+    margin: 32px 0;
+}
+
+#course-info .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#course-info .courses {
+    max-width: 24%;
+    margin: 16px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.5s ease-in 0.1s;
+}
+
+#course-info .courses:hover {
+    background-color: lightgray;
+    max-width: 28%;
+}
+
+#course-info .content {
+    padding: 32px 32px 24px;
+}
+
+#course-info .content h3 {
+    margin-bottom: 16px;
+}
+
+#course-info .content p {
+    line-height: 1.5;
+    color: gray;
+    font-size: 18px;
+}
+
+#course-info .courses-label {
+    margin-bottom: 0.75rem;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #course-info .courses {
+        min-width: 36%;
+    }
+
+    #course-info .courses:hover {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    
+    #course-info .course-container {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #course-info .courses {
+        background-color: lightgray;
+        opacity: 0.9;
+        margin: 8px 24px;
+        max-width: 80%;
+    }
+
+    #course-info .courses:hover {
+        max-width: 100%;
+    }
+
+    #course-info h3 {
+        font-size: 32px;
+    }
+}
+
+/* Thesis Exhibit */
+
+#thesis-exhibit {
+    background-color: ghostwhite;
+    padding: 32px 0 32px 24px;
+}
+
+#thesis-exhibit h2 {
+    text-align: center;
+    margin: 24px 0;
+}
+
+#thesis-container {
+    display: flex;
+    padding-top: 24px;
+}
+
+#thesis-video {
+    width: 55%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#thesis-exhibit .image-container {
+    max-width: 32%;
+    margin: 16px;
+}
+
+#thesis-exhibit .content h3 {
+    margin: 16px 0;
+}
+
+.exhibit-container {
+    width: 45%;
+    margin-left: 32px;
+}
+
+.exhibit-container .content {
+    margin-left: 8px;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+
+    #thesis-container, #thesis-video {
+        width: 100%;
+        padding-bottom: 48px;
+    }
+
+
+    #thesis-exhibit h2 {
+        margin: 0;
+        padding: 24px;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: ghostwhite;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    height: 64px;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin-left: 24px;
+}
+
+footer span {
+    margin: 16px;
+}
+
+footer div {
+    padding-top: 16px;
+}
+
